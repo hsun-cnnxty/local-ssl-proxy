@@ -18,7 +18,7 @@ Object.keys(config).forEach(function(name) {
   var source = options.source || args.source;
 
   proxy.createServer({
-    xfwd: true,
+    xfwd: false,
     ws: true,
     target: {
       host: hostname,
